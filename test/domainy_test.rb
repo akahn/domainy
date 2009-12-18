@@ -18,7 +18,9 @@ class DomainyTest < Test::Unit::TestCase
 
   describe "Domainy" do
     test_domain "example.com", "example.com"
+    test_domain "example.com", "www.example.com"
     test_domain "127.0.0.1", "127.0.0.1"
+    test_domain "example.com.pk", "www.example.com.pk"
     test_domain "example.com.pk", "example.com.pk"
     test_domain "tv.com", "example.tv.com"
     test_domain "example.com.tv", "example.com.tv"
